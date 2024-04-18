@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+	
+	<head>
+		<meta charset="UTF-8">
+    	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title> Personal Portfolio Website - Tshepang Chou</title>
+		<link rel="stylesheet" href="styles.css">
+		<script src="https://kit.fontawesome.com/1754a1bd37.js" crossorigin="anonymous"></script>
+	</head>
+
+	<body>
+		<!-- -----------Home Section---------- -->
+		<div id="header">
+			<div class="container">
+				<nav>
+					<img src="TCLOGO.png" class="logo">
+					<ul id="sidemenu">
+						<li><a href="#header">Home</a></li>
+						<li><a href="#about">About</a></li>
+						<li><a href="#services">Services</a></li>
+						<li><a href="#portfolio">Portfolio</a></li>
+						<li><a href="#contact">Contact</a></li>
+						<i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+					</ul>
+					<i class="fa-solid fa-bars" onclick="openmenu()"></i>
+				</nav>
+
+				<div class="header-text">
+					<p><span>ICT (Information And Communication Technology)</span> <br>in App Dev Graduate</p>
+					<h1>Hi, I'm Tshepang Chou</h1>
+				</div>
+			</div>
+		</div>
+
+		<!-- -----------About Section---------- -->
+		<div id="about">
+			<div class="container">
+				<div class="row">
+					<div class="about-col-1">
+						<img src="tshepangGraduation.jpeg">
+					</div>
+					<div class="about-col-1">
+						<h1 class="subtitle">About Me</h1>
+						<p>My name is Tshepang Chou from Kimberley. I have completed my matric at St Boniface High School in Kimberley then went on to complete my Diploma and Advanced Diploma in Information and Communication Technology, also known as ICT, at Sol Plaatje University in Kimberley. I am a hard working individual who is always willing to learn from my peers and can work really well in a group. I can work well under pressure. My goal is to just be one of the best individual who can help other peers to grow and learn from. I am very competitive and want the best results. I can adapt to any situation I am involved in and I strive for the best results. I enjoy coding and being around an environment where people are coding and working on different codes and programming languages.</p>
+
+						<div class="tab-titles">
+							<p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+							<p class="tab-links" onclick="opentab('experience')">Experience</p>
+							<p class="tab-links" onclick="opentab('education')">Education</p>
+						</div>
+
+						<div class="tab-contents active-tab" id="skills"> <!--Skills-->
+							<ul>
+								<li><span>UI/UX</span><br>Designing Web/App Interfaces</li>
+								<li><span>Web Development</span><br>Web App Development</li>
+								<li><span>App Development</span><br>Building Applications</li>
+							</ul>
+						</div>
+
+						<div class="tab-contents" id="experience"> <!--Experience-->
+							<ul>
+								<li><span>2022</span><br>Module Tutor at Sol Plaatje University</li>
+								<li><span>2021</span><br>Casual Worker at Horseshoe Motel (December)</li>
+								<li><span>2020</span><br>Casual Worker at Horseshoe Motel (December)</li>
+							</ul>
+						</div>
+
+						<div class="tab-contents" id="education"> <!--Education-->
+							<ul>
+								<li><span>2023</span><br>Sol Plaatje University (Advanced Diploma in ICT)</li>
+								<li><span>2020 - 2022</span><br>Sol Plaatje University (Diploma in ICT)</li>
+								<li><span>2015 - 2019</span><br>St Boniface High School (NSC)</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- -----------Service Section---------- -->
+		<div id="services">
+			<div class="container">
+				<h1 class="subtitle">My Services</h1>
+				<div class="services-list">
+					<div>
+						<i class="fa-solid fa-code"></i>
+						<h2>Web Design</h2>
+						<p></p>
+						<a href="#">Learn more</a>
+					</div>
+
+					<div>
+						<i class="fa-solid fa-crop-simple"></i>
+						<h2>UI/UX Design</h2>
+						<p></p>
+						<a href="#">Learn more</a>
+					</div>
+
+					<div>
+						<i class="fa-brands fa-app-store"></i>
+						<h2>App Design</h2>
+						<p></p>
+						<a href="#">Learn more</a>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- -----------Portfolio Section---------- -->
+		<div id="portfolio">
+			<div class="container">
+				<h1 class="subtitle">My Work</h1>
+				<div class="work-list">
+					<div class="work">
+						<img src="work-1.png">
+						<div class="layer">
+							<h3>Pharmacist System</h3>
+							<p>The system is for pharmacy companies. It consists of two (2) users which is the Admin and Pharmacist.<br>Admin keeps track of the pharcists who have access to the system.<br>Pharmacist deals with the selling of the medication and printing of the bills.</p>
+							<a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+						</div>
+					</div>
+
+					<div class="work">
+						<img src="work-2.png">
+						<div class="layer">
+							<h3>Blood Bank System</h3>
+							<p>The system is for Blood Donating companies. It is used by the Admin to register new Donors, update the blood stock which they have and delete donators who no-longer exist. Admin can check the blood types that are available in their inventory.</p>
+							<a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+						</div>
+					</div>
+
+					<div class="work">
+						<img src="work-3.png">
+						<div class="layer">
+							<h3>Patient-Doctor System</h3>
+							<p>The system is for Doctors who own private surgery complexes. It is used by the patients to create accounts and set appointments with the doctor if they may need medical help. <br> The doctor gets to keep track of his/her appointments and can distribute medical prescriptions on the system.</p>
+							<a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+						</div>
+					</div>
+				</div>
+				<a href="https://github.com/TshepangChou/Personal-Projects" class="btn">See More</a>
+			</div>
+		</div>
+
+		<!-- -----------Contact Section---------- -->
+		<div id="contact">
+			<div class="container">
+				<div class="row">
+					<div class="contact-left">
+						<h1 class="subtitle">Contact Me</h1>
+						<p><i class="fa-solid fa-envelope"></i>tshepangchou@gmail.com</p>
+						<p><i class="fa-solid fa-phone"></i>0761051332</p>
+						<div class="social-icons">
+							<a href="https://web.facebook.com/tshepangchou"><i class="fa-brands fa-facebook"></i></a>
+							<a href="https://www.instagram.com/tshepang.chou/"><i class="fa-brands fa-instagram"></i></a>
+							<a href="https://www.linkedin.com/in/tshepang-chou-b6b014215/"><i class="fa-brands fa-linkedin"></i></a>
+							<a href="https://github.com/TshepangChou"><i class="fa-brands fa-github"></i></a>
+							<a href="https://wa.link/hcu9wj"><i class="fa-brands fa-whatsapp"></i></a>
+						</div>
+						<a href="CURRICULUM-VITAE.pdf" download class="btn btn2">Download CV</a>
+						<a href="Chou-transcript.pdf" download class="btn btn2">Download Academic Transcript</a>
+						<a href="chou-diploma.pdf" download class="btn btn2">Download Qualification</a>
+					</div>
+
+					<div class="contact-right">
+						<form name="submit-to-google-sheet">
+							<input type="text" name="Name" placeholder="Enter Your Name" required>
+							<input type="email" name="email" placeholder="Enter Your Email" required>
+							<textarea name="Message" rows="6" placeholder="Enter Your Message"></textarea>
+							<button type="submit" class="btn btn2">Submit</button>
+						</form>
+						<span id="msg"></span>
+					</div>
+				</div>
+			</div>
+			<div class="copyright">
+				<p>Copyright @Tshepang Chou.<i class="fa-solid fa-heart"></i></p>
+			</div>
+		</div>
+
+		<script>
+			var tablinks = document.getElementsByClassName("tab-links");
+			var tabcontents = document.getElementsByClassName("tab-contents");
+
+			function opentab(tabname){
+				for(tablink of tablinks){
+					tablink.classList.remove("active-link");
+				} 
+				for(tabcontent of tabcontents){
+					tabcontent.classList.remove("active-tab");
+				}
+				event.currentTarget.classList.add("active-link");
+				document.getElementById(tabname).classList.add("active-tab");
+			}
+		</script>
+
+		<script>
+			var sidemeu = document.getElementById("sidemenu");
+
+			function openmenu(){
+				sidemeu.style.right = "0"
+			}
+			function closemenu(){
+				sidemeu.style.right = "-200px"
+			}
+		</script>
+
+		<script>
+			const scriptURL = '<https://script.google.com/macros/s/AKfycbzRQbHt4e9lCDR2Q1x8faNZttmNNA9wQpckR80uGc0TBXu9DtpR58oGhlqlyFFfDtdZ/exec'
+			const form = document.forms['submit-to-google-sheet']
+			const msg = document.getElementById("msg")
+
+  			form.addEventListener('submit', e => {
+  				e.preventDefault()
+    			fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      			.then(response => {msg.innerHTML = "Message sent Successfully" setTimeout(function(){msg.innerHTML = ""}, 5000) form.reset()})
+      			.catch(error => console.error('Error!', error.message))
+  			})
+		</script>
+	</body>
+</html>	
